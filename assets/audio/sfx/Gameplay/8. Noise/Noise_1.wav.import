@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ccxu3id6eaje0"
+path="res://.godot/imported/Noise_1.wav-b22fa395d2ab7209344835bb3c61c76d.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Gameplay/8. Noise/Noise_1.wav"
+dest_files=["res://.godot/imported/Noise_1.wav-b22fa395d2ab7209344835bb3c61c76d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

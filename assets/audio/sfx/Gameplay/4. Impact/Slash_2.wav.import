@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nxompfhg1be"
+path="res://.godot/imported/Slash_2.wav-1d72b1af81cc86d5050a0057dda6ea76.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Gameplay/4. Impact/Slash_2.wav"
+dest_files=["res://.godot/imported/Slash_2.wav-1d72b1af81cc86d5050a0057dda6ea76.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

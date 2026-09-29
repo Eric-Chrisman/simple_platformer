@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dfbgp67b0oc1c"
+path="res://.godot/imported/Blop_3.wav-c9e42be68600d8b2f6124de4a458b49e.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Gameplay/7. Blip, Blop and Pops/Blop_3.wav"
+dest_files=["res://.godot/imported/Blop_3.wav-c9e42be68600d8b2f6124de4a458b49e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b7yvqst5xgqqu"
+path="res://.godot/imported/Jump_1.wav-7fade42c8a3ba856e818b6bf178a9508.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Gameplay/3. Movement/Jump_1.wav"
+dest_files=["res://.godot/imported/Jump_1.wav-7fade42c8a3ba856e818b6bf178a9508.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

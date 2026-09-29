@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://dcju7p705mk6r"]
+
+[ext_resource type="Script" uid="uid://0fgbvg4lefu5" path="res://src/game_mechanics/fire_block/fire_block.gd" id="1_bg81y"]
+[ext_resource type="Texture2D" uid="uid://d4g8r5is0mtiv" path="res://assets/sprites/Traps/Fire/On (16x32).png" id="1_jjdx4"]
+[ext_resource type="Texture2D" uid="uid://cs7hxfikqd3k6" path="res://assets/sprites/Traps/Fire/Off.png" id="2_1c206"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbp1v"]
+atlas = ExtResource("1_jjdx4")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bg81y"]
+atlas = ExtResource("1_jjdx4")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1c206"]
+atlas = ExtResource("1_jjdx4")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ll62f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1c206")
+}],
+"loop": 1,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbp1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bg81y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c206")
+}],
+"loop": 1,
+"name": &"shooting_fire",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ll62f"]
+size = Vector2(10, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xyqds"]
+size = Vector2(16, 16)
+
+[node name="FireBlock" type="Node2D" unique_id=1231013852]
+script = ExtResource("1_bg81y")
+idle_time = 1.0
+shooting_fire_time = 1.0
+
+[node name="Animations" type="AnimatedSprite2D" parent="." unique_id=2116140751]
+unique_name_in_owner = true
+position = Vector2(0, -7)
+sprite_frames = SubResource("SpriteFrames_ll62f")
+animation = &"shooting_fire"
+frame_progress = 0.5806997
+
+[node name="OnTimer" type="Timer" parent="." unique_id=2144872953]
+unique_name_in_owner = true
+
+[node name="OffTimer" type="Timer" parent="." unique_id=285848110]
+unique_name_in_owner = true
+
+[node name="FireHitBox" type="Area2D" parent="." unique_id=1545140959]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FireHitBox" unique_id=234930319]
+position = Vector2(0, -11.5)
+shape = SubResource("RectangleShape2D_ll62f")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="FireHitBox" unique_id=1222327689]
+polygon = PackedVector2Array(-4, -16, 0, -20, 4, -16)
+
+[node name="FireBoundingBox" type="StaticBody2D" parent="." unique_id=870406553]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FireBoundingBox" unique_id=738100717]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_xyqds")

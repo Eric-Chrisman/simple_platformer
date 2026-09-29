@@ -1,0 +1,9 @@
+[gd_resource type="TileSet" format=3 uid="uid://dyfhd85ijmi1q"]
+
+[ext_resource type="PackedScene" uid="uid://dcju7p705mk6r" path="res://src/game_mechanics/fire_block/fire_block.tscn" id="1_xxfh7"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_r6ru4"]
+scenes/1/scene = ExtResource("1_xxfh7")
+
+[resource]
+sources/0 = SubResource("TileSetScenesCollectionSource_r6ru4")

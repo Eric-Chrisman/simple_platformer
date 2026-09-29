@@ -1,0 +1,39 @@
+[gd_scene format=4 uid="uid://de6k2k2ne37gt"]
+
+[ext_resource type="PackedScene" uid="uid://w4iv6affbaej" path="res://assets/levels/level_test.tscn" id="1_0h8po"]
+[ext_resource type="Script" uid="uid://dbx01ey45uu7m" path="res://src/misc/parallax_background/parallax_background.gd" id="2_bg6xb"]
+[ext_resource type="TileSet" uid="uid://br6v0jpeb5rsg" path="res://assets/tilesets/background.tres" id="3_7a1mn"]
+[ext_resource type="Script" uid="uid://b7kloru33i3c1" path="res://src/misc/music_player/music_player.gd" id="4_0h8po"]
+[ext_resource type="AudioStream" uid="uid://c02gbfsq2sraj" path="res://assets/audio/music/Aspiration Woods (Area Theme).wav" id="5_8bq6g"]
+[ext_resource type="AudioStream" uid="uid://d22qhvnwswaxm" path="res://assets/audio/music/Final Struggle (Boss Theme).wav" id="6_50616"]
+[ext_resource type="AudioStream" uid="uid://b2chvue6urlw3" path="res://assets/audio/music/Lost Kingdom (Piano Menu).wav" id="7_jjrvb"]
+[ext_resource type="PackedScene" uid="uid://b8q1qy4ytmbkp" path="res://src/game_mechanics/player/Player.tscn" id="8_4w566"]
+[ext_resource type="Script" uid="uid://bgpgyjyd4ywhu" path="res://src/game_mechanics/player_camera/player_camera.gd" id="9_bg6xb"]
+
+[node name="Main" type="Node2D" unique_id=1998903788]
+
+[node name="LevelTest" parent="." unique_id=1737449613 instance=ExtResource("1_0h8po")]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1473284125]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1692277685]
+motion_mirroring = Vector2(640, 512)
+script = ExtResource("2_bg6xb")
+
+[node name="Background" type="TileMapLayer" parent="ParallaxBackground/ParallaxLayer" unique_id=46260901]
+tile_map_data = PackedByteArray("AAD9//7/CAAAAAAAAAD9////CAAAAAAAAAD9/wAACAAAAAAAAAD9/wEACAAAAAAAAAD9/wIACAAAAAAAAAD9/wMACAAAAAAAAAD9/wQACAAAAAAAAAD9/wUACAAAAAAAAAD+//7/CAAAAAAAAAD+////CAAAAAAAAAD+/wAACAAAAAAAAAD+/wEACAAAAAAAAAD+/wIACAAAAAAAAAD+/wMACAAAAAAAAAD+/wQACAAAAAAAAAD+/wUACAAAAAAAAAD///7/CAAAAAAAAAD/////CAAAAAAAAAD//wAACAAAAAAAAAD//wEACAAAAAAAAAD//wIACAAAAAAAAAD//wMACAAAAAAAAAD//wQACAAAAAAAAAD//wUACAAAAAAAAAAAAP7/CAAAAAAAAAAAAP//CAAAAAAAAAAAAAAACAAAAAAAAAAAAAEACAAAAAAAAAAAAAIACAAAAAAAAAAAAAMACAAAAAAAAAAAAAQACAAAAAAAAAAAAAUACAAAAAAAAAABAP7/CAAAAAAAAAABAP//CAAAAAAAAAABAAAACAAAAAAAAAABAAEACAAAAAAAAAABAAIACAAAAAAAAAABAAMACAAAAAAAAAABAAQACAAAAAAAAAABAAUACAAAAAAAAAACAP7/CAAAAAAAAAACAP//CAAAAAAAAAACAAAACAAAAAAAAAACAAEACAAAAAAAAAACAAIACAAAAAAAAAACAAMACAAAAAAAAAACAAQACAAAAAAAAAACAAUACAAAAAAAAAADAP7/CAAAAAAAAAADAP//CAAAAAAAAAADAAAACAAAAAAAAAADAAEACAAAAAAAAAADAAIACAAAAAAAAAADAAMACAAAAAAAAAADAAQACAAAAAAAAAADAAUACAAAAAAAAAAEAP7/CAAAAAAAAAAEAP//CAAAAAAAAAAEAAAACAAAAAAAAAAEAAEACAAAAAAAAAAEAAIACAAAAAAAAAAEAAMACAAAAAAAAAAEAAQACAAAAAAAAAAEAAUACAAAAAAAAAAFAP7/CAAAAAAAAAAFAP//CAAAAAAAAAAFAAAACAAAAAAAAAAFAAEACAAAAAAAAAAFAAIACAAAAAAAAAAFAAMACAAAAAAAAAAFAAQACAAAAAAAAAAFAAUACAAAAAAAAAAGAP7/CAAAAAAAAAAGAP//CAAAAAAAAAAGAAAACAAAAAAAAAAGAAEACAAAAAAAAAAGAAIACAAAAAAAAAAGAAMACAAAAAAAAAAGAAQACAAAAAAAAAAGAAUACAAAAAAAAAA=")
+tile_set = ExtResource("3_7a1mn")
+
+[node name="MusicPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=620226053]
+autoplay = true
+script = ExtResource("4_0h8po")
+_music_tracks = Array[AudioStream]([ExtResource("5_8bq6g"), ExtResource("6_50616"), ExtResource("7_jjrvb")])
+metadata/_custom_type_script = "uid://b7kloru33i3c1"
+
+[node name="Player" parent="." unique_id=779849002 instance=ExtResource("8_4w566")]
+position = Vector2(44, 106)
+
+[node name="PlayerCamera" type="Camera2D" parent="." unique_id=669555240 node_paths=PackedStringArray("character_to_follow")]
+script = ExtResource("9_bg6xb")
+character_to_follow = NodePath("../Player")
+metadata/_custom_type_script = "uid://bgpgyjyd4ywhu"

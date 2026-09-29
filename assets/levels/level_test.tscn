@@ -1,0 +1,14 @@
+[gd_scene format=4 uid="uid://w4iv6affbaej"]
+
+[ext_resource type="TileSet" uid="uid://bhw7x46h1yhtp" path="res://assets/tilesets/gametiles.tres" id="1_18tpw"]
+[ext_resource type="TileSet" uid="uid://dyfhd85ijmi1q" path="res://assets/tilesets/entities.tres" id="2_8y40q"]
+
+[node name="LevelTest" type="Node2D" unique_id=1737449613]
+
+[node name="Map_Layer" type="TileMapLayer" parent="." unique_id=1297830123]
+tile_map_data = PackedByteArray("AAABAAkAAAAGAAAAAAABAAoAAAAGAAEAAAABAAsAAAAGAAIAAAACAAkAAAAHAAAAAAACAAoAAAAHAAEAAAACAAsAAAAHAAIAAAADAAkAAAAIAAAAAAADAAoAAAAIAAEAAAADAAsAAAAIAAIAAAAFAAkAAAAGAAAAAAAFAAoAAAAGAAEAAAAFAAsAAAAGAAIAAAAGAAkAAAAHAAAAAAAGAAoAAAAHAAEAAAAGAAsAAAAHAAIAAAAHAAkAAAAIAAAAAAAHAAoAAAAIAAEAAAAHAAsAAAAIAAIAAAAJAAkAAAAGAAAAAAAJAAoAAAAGAAEAAAAJAAsAAAAGAAIAAAAKAAkAAAAHAAAAAAAKAAoAAAAHAAEAAAAKAAsAAAAHAAIAAAALAAkAAAAIAAAAAAALAAoAAAAIAAEAAAALAAsAAAAIAAIAAAA=")
+tile_set = ExtResource("1_18tpw")
+
+[node name="Entity_Layer" type="TileMapLayer" parent="." unique_id=914336311]
+tile_map_data = PackedByteArray("AAACAAgAAAAAAAAAAQAGAAgAAAAAAAAAAQA=")
+tile_set = ExtResource("2_8y40q")

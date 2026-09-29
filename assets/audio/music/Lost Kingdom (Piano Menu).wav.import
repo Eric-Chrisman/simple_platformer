@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2chvue6urlw3"
+path="res://.godot/imported/Lost Kingdom (Piano Menu).wav-3540c10ae34609b0f88582fda8d93a28.sample"
+
+[deps]
+
+source_file="res://assets/audio/music/Lost Kingdom (Piano Menu).wav"
+dest_files=["res://.godot/imported/Lost Kingdom (Piano Menu).wav-3540c10ae34609b0f88582fda8d93a28.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

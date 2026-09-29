@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csvdovnjfoh6h"
+path="res://.godot/imported/Click_6.wav-9c18aa90779717cd8300f66b8636d68a.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/UI/2. Clicks/Click_6.wav"
+dest_files=["res://.godot/imported/Click_6.wav-9c18aa90779717cd8300f66b8636d68a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,54 @@
+[gd_resource type="TileSet" format=3 uid="uid://br6v0jpeb5rsg"]
+
+[ext_resource type="Texture2D" uid="uid://c2tma30fqaclt" path="res://assets/sprites/Background/Gray.png" id="1_2fe5k"]
+[ext_resource type="Texture2D" uid="uid://ms28ouoysuaj" path="res://assets/sprites/Background/Green.png" id="2_3quse"]
+[ext_resource type="Texture2D" uid="uid://cvl2cyofa4g7s" path="res://assets/sprites/Background/Pink.png" id="3_wvn8b"]
+[ext_resource type="Texture2D" uid="uid://dnmf2mdmwp1ic" path="res://assets/sprites/Background/Purple.png" id="4_5l71x"]
+[ext_resource type="Texture2D" uid="uid://c2lr8ewwdbuw8" path="res://assets/sprites/Background/Yellow.png" id="5_qnkyx"]
+[ext_resource type="Texture2D" uid="uid://bjv2hy0vl5r78" path="res://assets/sprites/Background/Blue.png" id="6_ctwrj"]
+[ext_resource type="Texture2D" uid="uid://b06e81kv2ds7r" path="res://assets/sprites/Background/Brown.png" id="7_mot6r"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1l7qf"]
+texture = ExtResource("1_2fe5k")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbdbh"]
+texture = ExtResource("2_3quse")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73xux"]
+texture = ExtResource("3_wvn8b")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nnnq0"]
+texture = ExtResource("4_5l71x")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1scwr"]
+texture = ExtResource("5_qnkyx")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_30uw4"]
+texture = ExtResource("6_ctwrj")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p84cf"]
+texture = ExtResource("7_mot6r")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/8 = SubResource("TileSetAtlasSource_30uw4")
+sources/9 = SubResource("TileSetAtlasSource_p84cf")
+sources/10 = SubResource("TileSetAtlasSource_1l7qf")
+sources/11 = SubResource("TileSetAtlasSource_bbdbh")
+sources/12 = SubResource("TileSetAtlasSource_73xux")
+sources/13 = SubResource("TileSetAtlasSource_nnnq0")
+sources/14 = SubResource("TileSetAtlasSource_1scwr")

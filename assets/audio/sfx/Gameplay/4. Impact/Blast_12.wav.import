@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d1f2x5x87ffte"
+path="res://.godot/imported/Blast_12.wav-aba4098400e512226888ad0b9b69ca39.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Gameplay/4. Impact/Blast_12.wav"
+dest_files=["res://.godot/imported/Blast_12.wav-aba4098400e512226888ad0b9b69ca39.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clxnyjsvh2l3g"
+path="res://.godot/imported/Cancel_4.wav-ca51e70e7f608a9c796a5fe5fccd9e2f.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/UI/3. Exit & Cancel/Cancel_4.wav"
+dest_files=["res://.godot/imported/Cancel_4.wav-ca51e70e7f608a9c796a5fe5fccd9e2f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
